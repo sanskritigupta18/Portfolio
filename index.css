@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap");
 * {
   font-family: "Source Sans Pro", sans-serif;
+  animation: blur-anim 1.5s linear 1;
 }
 html {
+  overflow: hidden;
   background-color: #dffeda;
 }
 /* Profile */
@@ -262,6 +264,11 @@ html {
     height: 25px;
   }
 }
+@media screen and (max-width: 408px) {
+  .animate {
+    left: 6.9em;
+  }
+}
 @media screen and (max-width: 362px) {
   .animate {
     position: relative;
@@ -279,11 +286,7 @@ html {
     animation: circle-rotate 5s linear infinite;
   }
 }
-@media screen and (max-width: 408px) {
-  .animate {
-    left: 6.9em;
-  }
-}
+
 @media screen and (max-width: 357px) {
   .animate {
     position: relative;
@@ -293,4 +296,13 @@ html {
     width: 8.8em;
     height: 8.8em;
   }
+}
+
+/* Blur */
+@keyframes blur-anim {
+  0%{
+    background-color: #ffffffbc;
+    filter: blur(100px);
+  }
+	100% {	filter: blur(0px) };
 }
