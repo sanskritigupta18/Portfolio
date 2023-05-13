@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap");
 * {
   font-family: "Source Sans Pro", sans-serif;
-  animation: blur-anim 1.5s linear 1;
+  animation: blur-anim 2s linear 1;
 }
 html {
   overflow: hidden;
@@ -301,8 +301,10 @@ html {
 /* Blur */
 @keyframes blur-anim {
   0%{
-    background-color: #ffffffbc;
-    filter: blur(100px);
+    background-color: #dffeda;
+    filter: blur(80px);
   }
-	100% {	filter: blur(0px) };
+	100% {
+    background-color: #dffeda31;
+    filter: blur(0px) };
 }
